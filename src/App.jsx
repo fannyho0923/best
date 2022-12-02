@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { IntlProvider } from "react-intl";
 import "./App.css";
 import "./index.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import en from "./i18n/en.js";
 import zh from "./i18n/zh.js";
-import useRWD from './useRWD';
+import useRWD from "./useRWD";
+// import { LanguageContextProvider } from "../src/helper/Language/LanguageContext";
 
 import HomePage from "./containers/HomePage";
 
@@ -22,6 +23,7 @@ function App() {
       defaultLocale={"en"}
       messages={(locale.includes("zh") && zh) || en}
     >
+      {/* <LanguageContextProvider> */}
       <BrowserRouter>
         <Routes>
           <Route
@@ -31,6 +33,7 @@ function App() {
           <Route path=""></Route>
         </Routes>
       </BrowserRouter>
+      {/* </LanguageContextProvider> */}
     </IntlProvider>
   );
 }

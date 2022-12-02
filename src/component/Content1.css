@@ -1,0 +1,165 @@
+.content-1-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f3f3;
+}
+
+.content-1-bg {
+  position: relative;
+  object-fit: cover;
+  clip-path: inset(0px 0px 0px 0px round 50% 0% 0% 50%);
+  right: -10%;
+  top: -120px;
+}
+
+.content-1-red-banner {
+  position: absolute;
+  top: 100px;
+  background: #c70e39;
+  color: white;
+  border-radius: 0px 1000px 1000px 0px;
+  padding-left: 100px;
+  padding-right: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  left: -20px;
+  margin-bottom: 10px;
+}
+
+.content-1-red-banner h1 {
+  margin-bottom: 15px;
+}
+
+.content-1-red-banner p {
+  max-width: 510px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.content-1-white-banner {
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
+  border-radius: 1000px;
+  background-color: #fff;
+  width: 644px;
+  padding: 50px 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-1-white-banner .service {
+  display: flex;
+  justify-content: center;
+  max-width: 170px;
+  flex-wrap: wrap;
+}
+
+.content-1-white-banner .divider {
+  flex-basis: 2px;
+  width: 2px;
+  height: 100px;
+  background: rgba(93, 99, 102, 0.08);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content-1-white-banner .service .icon {
+  width: 44px;
+  height: 44px;
+  background-color: yellow;
+  margin-right: 17px;
+}
+
+.content-1-white-banner .service .desc {
+  width: 100%;
+  text-align: center;
+}
+
+.content-1-white-banner-mobile {
+  display: none;
+}
+
+.content-1-white-banner {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .content-1-white-banner {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-1-container {
+    background-image: url("https://picsum.photos/1352/1086");
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .content-1-bg {
+    display: none;
+  }
+
+  .content-1-red-banner {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 40px;
+    padding-right: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .content-1-white-banner-mobile {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    border-radius: 1000px;
+    background-color: #fff;
+    width: 644px;
+    padding: 50px 70px;
+  }
+
+  .content-1-white-banner-mobile .service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 220px;
+  }
+
+  .content-1-white-banner-mobile .icon {
+    width: 44px;
+    height: 44px;
+    background-color: #000;
+    margin-right: 22px;
+  }
+
+  .content-1-white-banner-mobile .divider {
+    height: 2px;
+    width: 80%;
+    background: rgba(93, 99, 102, 0.08);
+    margin-bottom: 20px;
+  }
+
+  .content-1-white-banner-mobile .service h2 {
+    font-size: 26px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .content-1-white-banner-mobile .service p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
