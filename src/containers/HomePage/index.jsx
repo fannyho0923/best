@@ -3,11 +3,13 @@ import React from "react";
 
 import { Box } from "@mui/material";
 import Header from "../../component/Header";
+import Content8 from "../../component/Content8";
 
-function HomePage() {
+function HomePage(props) {
   return (
     <>
-      <Header />
+      <Header {...props} />
+      <Content8 />
       <Box
         className="ml-4 p-1 bg-black"
         sx={{
