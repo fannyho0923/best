@@ -6,7 +6,7 @@ export default {
   "locales.service.text": "服務",
   "locales.sustainability.text": "永續經營",
   "locales.contact.text": "聯絡我們",
-  // serviceLocations
+  // serviceLocations(content8)
   "locales.serviceLocations.text": "服務據點",
   "locales.taiwan.text": "台灣",
   "locales.us.text": "美國",

@@ -3,9 +3,9 @@ import { Box, Button, Tab, Tabs } from "@mui/material";
 import { FormattedMessage } from "react-intl";
 import {} from "reactstrap";
 
-const Content8 = ({ lang, locale, setLocale }) => {
+const Content8 = () => {
   return (
-    <Box className="w-full flex bg-[#50d71e] flex flex-col justify-center items-center">
+    <Box className="w-full flex bg-[#F1F5F9] flex flex-col justify-center items-center">
       <Box
         style={{
           width: 1240,
@@ -47,10 +47,11 @@ const Content8 = ({ lang, locale, setLocale }) => {
                     width: "288px",
                   }}
                 >
-                  <p>台灣</p>
-                  <p>pippa@bestlog.com.tw (李小姐)</p>
                   <p>
-                    總部、台北辦公室、平鎮辦公室、忠富倉、台中轉運站、高雄轉運站
+                    <FormattedMessage id="locales.taiwan.text" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="locales.LiAddress.text" />
                   </p>
                 </Box>
               </Box>
@@ -66,11 +67,14 @@ const Content8 = ({ lang, locale, setLocale }) => {
                     width: "288px",
                   }}
                 >
-                  <p>美國</p>
-                  <p>+1-408-940-0036 (Miss Rita)</p>
                   <p>
-                    Best USA Logistics Inc. 675 Sycamore Drive, STE 150
-                    Milpitas, CA 95035
+                    <FormattedMessage id="locales.us.text" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="locales.RitaPhone.text" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="locales.RitaLiAddress.text" />
                   </p>
                 </Box>
               </Box>
@@ -86,8 +90,12 @@ const Content8 = ({ lang, locale, setLocale }) => {
                     width: "288px",
                   }}
                 >
-                  <p>台灣</p>
-                  <p>5 個服務據點</p>
+                  <p>
+                    <FormattedMessage id="locales.detailsLocations.text" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="locales.locationCount.text" />
+                  </p>
                 </Box>
               </Box>
             </Box>

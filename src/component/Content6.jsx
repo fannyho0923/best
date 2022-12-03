@@ -6,7 +6,7 @@ import {} from "reactstrap";
 const Content6 = ({ lang, locale, setLocale }) => {
   return (
     <Box
-      className="w-full flex flex-col bg-slate-100"
+      className="w-full flex flex-col bg-[#13181E]"
       style={{ paddingTop: "250px", paddingBottom: "250px" }}
     >
       <Box

@@ -5,15 +5,24 @@ import {} from "reactstrap";
 
 const Content7 = ({ lang, locale, setLocale }) => {
   return (
-    <Box className="w-full flex bg-[#50d71e] flex flex-col justify-center items-center mb-4">
+    <Box className="w-full flex bg-[#F1F5F9] flex flex-col justify-center items-center">
       <Box
         style={{
           width: 1240,
           // height: 757,
         }}
       >
-        <h2 className="m-0">需要協助</h2>
-        <h2 className="m-0">佰事達國際化的團隊可為您提供最佳方案。</h2>
+        <Box
+          style={{
+            padding: "60px",
+            paddingBottom: 0,
+          }}
+        >
+          <h2 className="m-0 text-black">需要協助</h2>
+          <p className="m-0 text-[#C70E39]" style={{}}>
+            佰事達國際化的團隊可為您提供最佳方案。
+          </p>
+        </Box>
         <Box>
           <Box
             className="flex justify-center mx-0"
@@ -21,7 +30,6 @@ const Content7 = ({ lang, locale, setLocale }) => {
               margin: "10px",
               padding: "60px",
               width: "100%",
-              backgroundColor: "pink",
             }}
           >
             <Box className="flex justify-between w-full">

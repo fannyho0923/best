@@ -3,13 +3,14 @@ import { Box, Button, Tab, Tabs } from "@mui/material";
 import { FormattedMessage } from "react-intl";
 // import { LanguageContext } from "../helper/Language/LanguageContext";
 
-const Footer = ({ lang, locale, setLocale }) => {
-  //   const langContext = useContext(WalLanguageContextletContext);
-  //   const lang = langContext.state.LanguageContext;
-  //   const setLang = walletContext.setLanguage;
+const Footer = () => {
   return (
     <Box
-      style={{ paddingTop: "100px", paddingBottom: "100px" }}
+      style={{
+        paddingTop: "100px",
+        paddingBottom: "100px",
+        border: "Grey6 Transparent #5D6366 8%",
+      }}
       sx={{ width: "100%", bgcolor: "background.paper" }}
     >
       <Box>BEST</Box>
