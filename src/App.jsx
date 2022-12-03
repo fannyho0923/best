@@ -25,10 +25,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            path="/best"
             element={<HomePage {...{ lang, locale, setLocale }} />}
           />
-          <Route path=""></Route>
         </Routes>
       </BrowserRouter>
     </IntlProvider>
